@@ -21,4 +21,8 @@ public class WonderBoy {
 	public int getVida() {
 		return this.vida;
 	}
+	
+	public void comer(Alimento alimento) {
+		alimento.consumirse(this);
+	}
 }
