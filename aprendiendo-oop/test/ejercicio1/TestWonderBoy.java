@@ -20,8 +20,9 @@ public class TestWonderBoy {
 	}
 	@Test
 	public void Come2Manzanas(){
-		this.Fede.comer(new Manzana());
-		this.Fede.comer(new Manzana());
+		for (int i = 0; i < 2;i++) {
+			this.Fede.comer(new Manzana());
+		}
 		Assert.assertEquals(this.Fede.getEnergia(), 38);
 	}
 	@Test
